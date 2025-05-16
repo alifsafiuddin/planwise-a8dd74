@@ -318,7 +318,7 @@ const AppTopbar = (props) => {
   };
 
   return props.isLoggedIn ? (
-    <div className="layout-topbar" style={{ backgroundColor: "#003740" }}>
+    <div className="layout-topbar" style={{ backgroundColor: "#303444" }}>
       <Link to="/project">
         <div className="cursor-pointer min-w-max flex align-items-end">
           <img src={pwLogo} height={50} className="mb-1" />
