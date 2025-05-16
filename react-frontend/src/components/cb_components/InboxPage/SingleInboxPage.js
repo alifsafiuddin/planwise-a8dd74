@@ -81,7 +81,7 @@ const SingleInboxPage = (props) => {
           />
           <h3
             className="m-0 ml-2"
-            // style={{ color: "#049eb8"}}
+            // style={{ color: "#3bcee8"}}
           >
             Inbox
           </h3>
@@ -97,7 +97,7 @@ const SingleInboxPage = (props) => {
                   className="mr-2"
                   size="large"
                   style={{
-                    backgroundColor: "#049eb8",
+                    backgroundColor: "#3bcee8",
                     color: "#ffffff",
                     borderRadius: "50%",
                   }}

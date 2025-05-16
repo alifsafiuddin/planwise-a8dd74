@@ -217,7 +217,7 @@ const AppTopbar = (props) => {
               size="large"
               style={{
                 borderRadius: "50%",
-                backgroundColor: "#049eb8",
+                backgroundColor: "#3bcee8",
                 color: "#ffffff",
               }}
             />
@@ -410,7 +410,7 @@ const AppTopbar = (props) => {
           aria-haspopup
           style={{
             borderRadius: "50%",
-            backgroundColor: "#049eb8",
+            backgroundColor: "#3bcee8",
             color: "#ffffff",
           }}
         />

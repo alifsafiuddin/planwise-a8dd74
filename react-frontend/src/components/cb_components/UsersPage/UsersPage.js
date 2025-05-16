@@ -162,8 +162,8 @@ const UsersPage = (props) => {
             message: error.message || "Failed to delete all records",
           });
           console.log({ error });
-        }),
-      ),
+        })
+      )
     );
     await props.alert({
       title: "Users",
@@ -312,7 +312,7 @@ const UsersPage = (props) => {
       template: (item) => (
         <div
           style={{
-            color: "#049eb8",
+            color: "#3bcee8",
             textAlign: "center",
             display: "flex",
             justifyContent: "center",
@@ -341,7 +341,7 @@ const UsersPage = (props) => {
           </h4>
           <SplitButton
             model={menuItems.filter(
-              (m) => !(m.icon === "pi pi-trash" && items?.length === 0),
+              (m) => !(m.icon === "pi pi-trash" && items?.length === 0)
             )}
             dropdownIcon="pi pi-ellipsis-h"
             buttonClassName="hidden"
@@ -353,7 +353,7 @@ const UsersPage = (props) => {
             {" "}
             <SplitButton
               model={filterMenuItems.filter(
-                (m) => !(m.icon === "pi pi-trash" && data?.length === 0),
+                (m) => !(m.icon === "pi pi-trash" && data?.length === 0)
               )}
               dropdownIcon={
                 <img
@@ -367,7 +367,7 @@ const UsersPage = (props) => {
             ></SplitButton>
             <SplitButton
               model={sortMenuItems.filter(
-                (m) => !(m.icon === "pi pi-trash" && data?.length === 0),
+                (m) => !(m.icon === "pi pi-trash" && data?.length === 0)
               )}
               dropdownIcon={
                 <img

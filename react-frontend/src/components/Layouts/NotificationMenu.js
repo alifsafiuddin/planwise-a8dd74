@@ -44,12 +44,12 @@ const NotificationMenu = (props) => {
 
         // Sort notifications by sent date, with the latest first
         const sortedNotifications = response.data.sort(
-          (a, b) => new Date(b.sent) - new Date(a.sent),
+          (a, b) => new Date(b.sent) - new Date(a.sent)
         );
         setNotifications(sortedNotifications);
 
         const unreadExists = sortedNotifications.some(
-          (notification) => !notification.read,
+          (notification) => !notification.read
         );
         setHasUnreadNotifications(unreadExists);
       } catch (error) {
@@ -66,7 +66,7 @@ const NotificationMenu = (props) => {
 
           // Sort again to ensure the new notification is at the top
           return updatedNotifications.sort(
-            (a, b) => new Date(b.sent) - new Date(a.sent),
+            (a, b) => new Date(b.sent) - new Date(a.sent)
           );
         });
 
@@ -84,18 +84,18 @@ const NotificationMenu = (props) => {
   const markAllAsRead = async () => {
     try {
       const unreadNotifications = notifications.filter(
-        (notification) => !notification.read,
+        (notification) => !notification.read
       );
       await Promise.all(
         unreadNotifications.map((notification) =>
           client
             .service("notifications")
-            .patch(notification._id, { read: true }),
-        ),
+            .patch(notification._id, { read: true })
+        )
       );
 
       const updatedNotifications = notifications.map((notification) =>
-        notification.read ? notification : { ...notification, read: true },
+        notification.read ? notification : { ...notification, read: true }
       );
 
       setNotifications(updatedNotifications);
@@ -109,8 +109,8 @@ const NotificationMenu = (props) => {
     client.service("notifications").patch(notification._id, { read: true });
     setNotifications((prevNotifications) =>
       prevNotifications.map((n) =>
-        n._id === notification._id ? { ...n, read: true } : n,
-      ),
+        n._id === notification._id ? { ...n, read: true } : n
+      )
     );
 
     if (notification.path) {
@@ -179,7 +179,7 @@ const NotificationMenu = (props) => {
                       size="small"
                       className="flex-shrink-0"
                       style={{
-                        backgroundColor: "#049eb8",
+                        backgroundColor: "#3bcee8",
                         color: "#ffffff",
                         marginRight: "10px",
                         borderRadius: "50%",
@@ -195,7 +195,7 @@ const NotificationMenu = (props) => {
                           {
                             day: "numeric",
                             month: "short",
-                          },
+                          }
                         )}
                         ,{" "}
                         {new Date(notification.sent).toLocaleTimeString(
@@ -204,7 +204,7 @@ const NotificationMenu = (props) => {
                             hour: "numeric",
                             minute: "numeric",
                             hour12: true,
-                          },
+                          }
                         )}
                       </div>
                     </div>

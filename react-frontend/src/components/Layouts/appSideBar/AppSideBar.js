@@ -76,7 +76,7 @@ const AppSideBar = (props) => {
         >
           <div className="flex-grow gap-1 p-2 overflow-x-hidden overflow-y-auto no-scrollbar">
             <div className="flex gap-3 px-3 py-[10px]">
-              <span className="cursor-pointer" onClick={() => setOpen(!open)}>
+              <span className="cursor-pointer " onClick={() => setOpen(!open)}>
                 <Toggle />
               </span>
             </div>
