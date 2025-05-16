@@ -265,9 +265,7 @@
           "reverse": false,
           "morph": false,
           "through": false,
-          "args": [
-            "8"
-          ],
+          "args": ["8"],
           "auditing": false,
           "warehousing": false,
           "searchable": false,
@@ -389,9 +387,7 @@
             "refServiceName": "users",
             "refDatabaseName": "users",
             "relationshipType": "one-to-one",
-            "identifierFieldName": [
-              "name"
-            ]
+            "identifierFieldName": ["name"]
           }
         },
         {
@@ -588,9 +584,7 @@
             "refServiceName": "users",
             "refDatabaseName": "users",
             "relationshipType": "one-to-one",
-            "identifierFieldName": [
-              "name"
-            ]
+            "identifierFieldName": ["name"]
           }
         },
         {
@@ -786,9 +780,7 @@
             "refServiceName": "users",
             "refDatabaseName": "users",
             "relationshipType": "one-to-one",
-            "identifierFieldName": [
-              "name"
-            ]
+            "identifierFieldName": ["name"]
           }
         },
         {
@@ -1029,9 +1021,7 @@
             "refServiceName": "users",
             "refDatabaseName": "users",
             "relationshipType": "one-to-one",
-            "identifierFieldName": [
-              "name"
-            ]
+            "identifierFieldName": ["name"]
           }
         },
         {
@@ -1279,9 +1269,7 @@
             "refServiceName": "users",
             "refDatabaseName": "users",
             "relationshipType": "one-to-one",
-            "identifierFieldName": [
-              "name"
-            ]
+            "identifierFieldName": ["name"]
           }
         },
         {
@@ -1360,9 +1348,7 @@
           "reverse": false,
           "morph": false,
           "through": false,
-          "args": [
-            "8"
-          ],
+          "args": ["8"],
           "auditing": false,
           "warehousing": false,
           "searchable": false,
