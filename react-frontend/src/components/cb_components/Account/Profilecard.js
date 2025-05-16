@@ -164,7 +164,7 @@ function ProfileCard(props) {
                     borderRadius: "50%",
                     width: "80px",
                     height: "80px",
-                    backgroundColor: "#D30000",
+                    backgroundColor: "#049eb8",
                     fontSize: "40px",
                     color: "#ffffff",
                   }}
@@ -192,8 +192,8 @@ function ProfileCard(props) {
                   className="p-button-rounded p-button-secondary"
                   style={{
                     backgroundColor: "white",
-                    color: "#D30000",
-                    border: "2px solid #D30000",
+                    color: "#049eb8",
+                    border: "2px solid #049eb8",
                     height: "30px",
                   }}
                 />

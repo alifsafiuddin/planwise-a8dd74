@@ -163,9 +163,9 @@ const Account = (props) => {
         onClick={() => navigate("/project")}
         icon="pi pi-angle-left"
         label="Back to dashboard"
-        className="gap-1.5 font-semibold tracking-wide text-right text-[#D30000] bg-transparent border-0 ml-[-1.2rem]"
+        className="gap-1.5 font-semibold tracking-wide text-right text-[#049eb8] bg-transparent border-0 ml-[-1.2rem]"
         style={{
-          color: "#D30000",
+          color: "#049eb8",
           backgroundColor: "transparent",
           border: "none",
           fontSize: "13px",
@@ -206,9 +206,9 @@ const Account = (props) => {
         <Button
           label="Change password"
           onClick={handleChangePassword}
-          className="font-semibold text-left text-[#D30000] bg-transparent border-0"
+          className="font-semibold text-left text-[#049eb8] bg-transparent border-0"
           style={{
-            color: "#D30000",
+            color: "#049eb8",
             backgroundColor: "transparent",
             border: "none",
             paddingLeft: 0,

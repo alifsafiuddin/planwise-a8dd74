@@ -25,7 +25,7 @@ const EditDashComp = (props) => {
     width: "130px",
     maxWidth: "130px",
     height: "40px",
-    border: "1px solid #D30000",
+    border: "1px solid #049eb8",
     borderRadius: "100px",
     marginRight: "0.5rem",
     padding: "16px",
@@ -37,7 +37,7 @@ const EditDashComp = (props) => {
     width: "40px",
     height: "40px",
     borderRadius: "50%",
-    border: "1px solid #D30000",
+    border: "1px solid #049eb8",
     padding: "8px",
     filter: "invert(1) sepia(1) saturate(5) hue-rotate(-55deg)",
   };

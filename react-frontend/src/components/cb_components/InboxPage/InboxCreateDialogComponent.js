@@ -47,7 +47,7 @@ const InboxCreateDialogComponent = (props) => {
         id: item._id,
         name: item.name,
         url: `http://localhost:3000/${props.serviceInbox}/${item._id}`,
-      })),
+      }))
     );
 
     let init = {
@@ -61,7 +61,7 @@ const InboxCreateDialogComponent = (props) => {
       init = initilization(
         { ...props?.entity, ...init },
         [from, toUser],
-        setError,
+        setError
       );
     }
     set_entity({ ...init });
@@ -92,7 +92,7 @@ const InboxCreateDialogComponent = (props) => {
     const contentLinksHTML = contentLinks
       .map(
         (link) => `<div style="text-align: right;">
-       <a href="${link.url}" target="_blank"><u>${link.name}</u></a><br/><br/> </div>`,
+       <a href="${link.url}" target="_blank"><u>${link.name}</u></a><br/><br/> </div>`
       )
       .join("");
 
@@ -164,7 +164,7 @@ const InboxCreateDialogComponent = (props) => {
       })
       .then((res) => {
         const currentUser = res.data.find(
-          (user) => user._id === props.user._id,
+          (user) => user._id === props.user._id
         );
 
         if (currentUser) {
@@ -175,7 +175,7 @@ const InboxCreateDialogComponent = (props) => {
           res.data.map((e) => ({
             name: e.name,
             value: e._id,
-          })),
+          }))
         );
       })
       .catch((error) => {
@@ -191,7 +191,7 @@ const InboxCreateDialogComponent = (props) => {
   useEffect(() => {
     if (searchTerm) {
       const filteredSuggestions = toUser.filter((user) =>
-        user.name.toLowerCase().startsWith(searchTerm.toLowerCase()),
+        user.name.toLowerCase().startsWith(searchTerm.toLowerCase())
       );
       setSuggestions(filteredSuggestions);
     } else {
@@ -201,7 +201,7 @@ const InboxCreateDialogComponent = (props) => {
 
   useEffect(() => {
     setIsSendButtonActive(
-      selectedUsers.length > 0 && _entity.subject && _entity.content,
+      selectedUsers.length > 0 && _entity.subject && _entity.content
     );
   }, [selectedUsers, _entity.subject, _entity.content]);
 
@@ -228,10 +228,10 @@ const InboxCreateDialogComponent = (props) => {
         }}
         style={{
           width: "400px",
-          border: "1px solid #D30000",
+          border: "1px solid #049eb8",
           marginRight: "10px",
           borderRadius: "20px",
-          color: "#D30000",
+          color: "#049eb8",
         }}
       />
       <Button
@@ -314,7 +314,7 @@ const InboxCreateDialogComponent = (props) => {
                   <Avatar
                     label={user.name ? user.name.charAt(0) : " "}
                     style={{
-                      backgroundColor: "#D30000",
+                      backgroundColor: "#049eb8",
                       color: "#ffffff",
                       marginRight: "10px",
                       width: "30px",
@@ -365,7 +365,7 @@ const InboxCreateDialogComponent = (props) => {
                   <Avatar
                     label={user.name ? user.name.charAt(0) : "U"}
                     style={{
-                      backgroundColor: "#D30000",
+                      backgroundColor: "#049eb8",
                       color: "#ffffff",
                       marginRight: "10px",
                       width: "30px",

@@ -95,7 +95,7 @@ const InboxDataTable = ({
 
     if (showFilter) {
       dataToDisplay = dataToDisplay.filter(
-        (item) => item.flagged || !item.read,
+        (item) => item.flagged || !item.read
       );
     }
     setFilteredData(dataToDisplay);
@@ -137,11 +137,11 @@ const InboxDataTable = ({
 
     try {
       const promises = selectedItems.map((item) =>
-        client.service("inbox").remove(item._id),
+        client.service("inbox").remove(item._id)
       );
       await Promise.all(promises);
       const updatedData = data.filter(
-        (item) => !selectedItems.find((selected) => selected._id === item._id),
+        (item) => !selectedItems.find((selected) => selected._id === item._id)
       );
       setData(updatedData);
       setSelectedDelete(selectedItems.map((item) => item._id));
@@ -162,7 +162,7 @@ const InboxDataTable = ({
           _selectedItems.push(rowData);
         } else {
           _selectedItems = _selectedItems.filter(
-            (item) => item._id !== rowData._id,
+            (item) => item._id !== rowData._id
           );
         }
         setSelectedItems(_selectedItems);
@@ -179,8 +179,8 @@ const InboxDataTable = ({
         prevItems.map((item) =>
           item._id === rowData._id
             ? { ...item, flagged: updatedFlagStatus }
-            : item,
-        ),
+            : item
+        )
       );
 
       await client.service("inbox").patch(rowData._id, {
@@ -195,7 +195,7 @@ const InboxDataTable = ({
         ]);
       } else {
         setFlaggedItems((prevFlaggedItems) =>
-          prevFlaggedItems.filter((id) => id !== rowData._id),
+          prevFlaggedItems.filter((id) => id !== rowData._id)
         );
       }
     } catch (error) {
@@ -209,7 +209,7 @@ const InboxDataTable = ({
     return (
       <i
         className={`pi ${isFlagged ? "pi-flag-fill" : "pi-flag"} flag-icon`}
-        style={{ color: isFlagged ? "#d30000" : "gray", cursor: "pointer" }}
+        style={{ color: isFlagged ? "#049eb8" : "gray", cursor: "pointer" }}
         onClick={(e) => {
           e.stopPropagation();
           toggleFlag(rowData);
@@ -396,7 +396,7 @@ const InboxDataTable = ({
       template: (item) => (
         <div
           style={{
-            color: "#d30000",
+            color: "#049eb8",
             textAlign: "center",
             display: "flex",
             justifyContent: "center",
@@ -471,7 +471,7 @@ const InboxDataTable = ({
       template: (item) => (
         <div
           style={{
-            color: "#d30000",
+            color: "#049eb8",
             textAlign: "center",
             display: "flex",
             justifyContent: "center",
@@ -504,7 +504,7 @@ const InboxDataTable = ({
 
         <SplitButton
           model={menuItems.filter(
-            (m) => !(m.icon === "pi pi-trash" && items?.length === 0),
+            (m) => !(m.icon === "pi pi-trash" && items?.length === 0)
           )}
           dropdownIcon="pi pi-ellipsis-h"
           buttonClassName="hidden"
@@ -515,7 +515,7 @@ const InboxDataTable = ({
         <div className="ml-auto flex">
           <SplitButton
             model={filterMenuItems.filter(
-              (m) => !(m.icon === "pi pi-trash" && data?.length === 0),
+              (m) => !(m.icon === "pi pi-trash" && data?.length === 0)
             )}
             dropdownIcon={
               <img
@@ -530,7 +530,7 @@ const InboxDataTable = ({
 
           <SplitButton
             model={sortMenuItems.filter(
-              (m) => !(m.icon === "pi pi-trash" && data?.length === 0),
+              (m) => !(m.icon === "pi pi-trash" && data?.length === 0)
             )}
             dropdownIcon={
               <img
