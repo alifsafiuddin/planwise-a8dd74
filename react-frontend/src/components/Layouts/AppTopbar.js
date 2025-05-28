@@ -63,7 +63,7 @@ const AppTopbar = (props) => {
       if (!currentCache || !currentCache.profiles) {
         await props.setCache(defaultCacheStructure);
         console.log(
-          "Cache initialized with profile-specific preferences and selected user"
+          "Cache initialized with profile-specific preferences and selected user",
         );
       }
     } catch (error) {
@@ -98,11 +98,11 @@ const AppTopbar = (props) => {
   const fetchRoleNames = async (profiles) => {
     const uniqueRoleIds = [
       ...new Set(
-        profiles.map((profile) => profile.position?.roleId).filter(Boolean)
+        profiles.map((profile) => profile.position?.roleId).filter(Boolean),
       ),
     ];
     const rolePromises = uniqueRoleIds.map((roleId) =>
-      client.service("roles").get(roleId)
+      client.service("roles").get(roleId),
     );
 
     try {

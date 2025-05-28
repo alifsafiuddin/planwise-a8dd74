@@ -35,7 +35,7 @@ const AppMenu = (props) => {
         to={to}
         className={classNames(
           "flex items-center justify-between py-[10px] px-3 rounded-md duration-300 group",
-          active ? "bg-[#F8ECEC]" : "bg-transparent"
+          active ? "bg-[#F8ECEC]" : "bg-transparent",
         )}
         onClick={() => {
           if (haveChildren) {
@@ -52,7 +52,7 @@ const AppMenu = (props) => {
             ref={setReferenceElement}
             className={classNames(
               "duration-300 group-hover:text-primary",
-              active ? "text-primary" : "text-secondary"
+              active ? "text-primary" : "text-secondary",
             )}
           >
             {icon}
@@ -61,7 +61,7 @@ const AppMenu = (props) => {
             className={classNames(
               "font-semibold duration-300 text-nowrap group-hover:text-primary",
               active ? "text-primary" : "text-secondary",
-              open || overlayMenu ? "opacity-100" : "opacity-0"
+              open || overlayMenu ? "opacity-100" : "opacity-0",
             )}
           >
             {label}
@@ -72,7 +72,7 @@ const AppMenu = (props) => {
             className={classNames(
               "text-xs duration-300 pi pi-chevron-down",
               active ? "text-primary" : "text-secondary",
-              menuExpand ? "rotate-180" : ""
+              menuExpand ? "rotate-180" : "",
             )}
           ></i>
         )}
@@ -112,14 +112,14 @@ const AppMenu = (props) => {
                 to={to}
                 className={classNames(
                   "flex items-center justify-between py-[10px] px-3 rounded-md duration-300 group",
-                  active ? "bg-[#F8ECEC]" : "bg-transparent"
+                  active ? "bg-[#F8ECEC]" : "bg-transparent",
                 )}
               >
                 <div className="flex gap-3">
                   <span
                     className={classNames(
                       "duration-300 group-hover:text-primary",
-                      active ? "text-primary" : "text-secondary"
+                      active ? "text-primary" : "text-secondary",
                     )}
                   >
                     {icon}
@@ -128,7 +128,7 @@ const AppMenu = (props) => {
                     className={classNames(
                       "font-semibold duration-300 text-nowrap group-hover:text-primary",
                       active ? "text-primary" : "text-secondary",
-                      !open ? "opacity-100" : "opacity-0"
+                      !open ? "opacity-100" : "opacity-0",
                     )}
                   >
                     {label}
@@ -137,7 +137,7 @@ const AppMenu = (props) => {
               </Link>
               <div
                 className={classNames(
-                  "overflow-hidden transition-all duration-300"
+                  "overflow-hidden transition-all duration-300",
                 )}
               >
                 <div className="flex flex-col gap-1 pl-3">

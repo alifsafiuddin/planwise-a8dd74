@@ -186,8 +186,8 @@ const BranchesPage = (props) => {
           setLoading(false);
           props.hide();
           console.log({ error });
-        })
-      )
+        }),
+      ),
     );
     props.hide();
     setLoading(false);
@@ -364,7 +364,7 @@ const BranchesPage = (props) => {
           </h4>
           <SplitButton
             model={menuItems.filter(
-              (m) => !(m.icon === "pi pi-trash" && items?.length === 0)
+              (m) => !(m.icon === "pi pi-trash" && items?.length === 0),
             )}
             dropdownIcon="pi pi-ellipsis-h"
             buttonClassName="hidden"
@@ -376,7 +376,7 @@ const BranchesPage = (props) => {
             {" "}
             <SplitButton
               model={filterMenuItems.filter(
-                (m) => !(m.icon === "pi pi-trash" && data?.length === 0)
+                (m) => !(m.icon === "pi pi-trash" && data?.length === 0),
               )}
               dropdownIcon={
                 <img
@@ -390,7 +390,7 @@ const BranchesPage = (props) => {
             ></SplitButton>
             <SplitButton
               model={sortMenuItems.filter(
-                (m) => !(m.icon === "pi pi-trash" && data?.length === 0)
+                (m) => !(m.icon === "pi pi-trash" && data?.length === 0),
               )}
               dropdownIcon={
                 <img
@@ -490,7 +490,7 @@ const BranchesPage = (props) => {
         id="rightsidebar"
         className={classNames(
           "overlay-auto z-1 surface-overlay shadow-2 absolute right-0 w-20rem animation-duration-150 animation-ease-in-out",
-          { hidden: !isHelpSidebarVisible, block: isHelpSidebarVisible }
+          { hidden: !isHelpSidebarVisible, block: isHelpSidebarVisible },
         )}
         style={{ top: "60px", height: "calc(100% - 60px)" }}
       >
