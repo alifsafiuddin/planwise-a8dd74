@@ -185,64 +185,6 @@ const AppSideBar = (props) => {
               setActiveKey={setActiveKey}
             />
             <AppMenu
-              icon={<Data />}
-              label="Data"
-              menuKey="data-management"
-              to="/DashboardDataManagement"
-              menus={[
-                {
-                  label: "DynaLoader",
-                  icon: <DynaLoader />,
-                  menuKey: "dyna-loader",
-                  to: "/dynaLoader",
-                },
-
-                {
-                  label: "Documents",
-                  icon: <Documents />,
-                  menuKey: "documents",
-                  to: "/documentStorages",
-                },
-                {
-                  label: "Assets",
-                  icon: <Files />,
-                  menuKey: "assets",
-                },
-                {
-                  label: "Email templates",
-                  icon: <Email />,
-                  menuKey: "email-templates",
-                  to: "/templates",
-                },
-              ]}
-              setActiveKey={setActiveKey}
-            />
-            <AppMenu
-              icon={<GenAI />}
-              label="Gen Ai"
-              menuKey="gen-ai"
-              menus={[
-                {
-                  label: "Chat AI",
-                  icon: <Chat />,
-                  menuKey: "chat-ai",
-                  to: "/chataiProject",
-                },
-                {
-                  label: "Prompts",
-                  icon: <Terminal />,
-                  menuKey: "prompts",
-                  to: "/prompts",
-                },
-                {
-                  label: "Usage",
-                  icon: <Documents />,
-                  menuKey: "usage",
-                  to: "/chataiUsage",
-                },
-              ]}
-            />
-            <AppMenu
               icon={<Users />}
               label="Users"
               menuKey="user-management"
@@ -284,51 +226,6 @@ const AppSideBar = (props) => {
                   icon: <Phones />,
                   menuKey: "phones",
                   to: "/userPhones",
-                },
-              ]}
-              setActiveKey={setActiveKey}
-            />
-            <AppMenu
-              icon={<Building />}
-              label="Company"
-              menuKey="company-management"
-              to="/DashboardCompanyData"
-              menus={[
-                {
-                  label: "Companies",
-                  icon: <Companies />,
-                  menuKey: "companies",
-                  to: "/companies",
-                },
-                {
-                  label: "Branches",
-                  icon: <Branches />,
-                  menuKey: "branches",
-                  to: "/branches",
-                },
-                {
-                  label: "Departments",
-                  icon: <Positions />,
-                  menuKey: "departments",
-                  to: "/departments",
-                },
-                {
-                  label: "Sections",
-                  icon: <Sections />,
-                  menuKey: "sections",
-                  to: "/sections",
-                },
-                {
-                  label: "Addresses",
-                  icon: <Addresses />,
-                  menuKey: "company-addresses",
-                  to: "/companyAddresses",
-                },
-                {
-                  label: "Phones",
-                  icon: <Phones />,
-                  menuKey: "company-phones",
-                  to: "/companyPhones",
                 },
               ]}
               setActiveKey={setActiveKey}
@@ -399,3 +296,107 @@ const AppSideBar = (props) => {
 };
 
 export default AppSideBar;
+
+/* <AppMenu
+              icon={<Data />}
+              label="Data"
+              menuKey="data-management"
+              to="/DashboardDataManagement"
+              menus={[
+                {
+                  label: "DynaLoader",
+                  icon: <DynaLoader />,
+                  menuKey: "dyna-loader",
+                  to: "/dynaLoader",
+                },
+
+                {
+                  label: "Documents",
+                  icon: <Documents />,
+                  menuKey: "documents",
+                  to: "/documentStorages",
+                },
+                {
+                  label: "Assets",
+                  icon: <Files />,
+                  menuKey: "assets",
+                },
+                {
+                  label: "Email templates",
+                  icon: <Email />,
+                  menuKey: "email-templates",
+                  to: "/templates",
+                },
+              ]}
+              setActiveKey={setActiveKey}
+            />
+            <AppMenu
+              icon={<GenAI />}
+              label="Gen Ai"
+              menuKey="gen-ai"
+              menus={[
+                {
+                  label: "Chat AI",
+                  icon: <Chat />,
+                  menuKey: "chat-ai",
+                  to: "/chataiProject",
+                },
+                {
+                  label: "Prompts",
+                  icon: <Terminal />,
+                  menuKey: "prompts",
+                  to: "/prompts",
+                },
+                {
+                  label: "Usage",
+                  icon: <Documents />,
+                  menuKey: "usage",
+                  to: "/chataiUsage",
+                },
+              ]}
+            />
+            <AppMenu
+              icon={<Building />}
+              label="Company"
+              menuKey="company-management"
+              to="/DashboardCompanyData"
+              menus={[
+                {
+                  label: "Companies",
+                  icon: <Companies />,
+                  menuKey: "companies",
+                  to: "/companies",
+                },
+                {
+                  label: "Branches",
+                  icon: <Branches />,
+                  menuKey: "branches",
+                  to: "/branches",
+                },
+                {
+                  label: "Departments",
+                  icon: <Positions />,
+                  menuKey: "departments",
+                  to: "/departments",
+                },
+                {
+                  label: "Sections",
+                  icon: <Sections />,
+                  menuKey: "sections",
+                  to: "/sections",
+                },
+                {
+                  label: "Addresses",
+                  icon: <Addresses />,
+                  menuKey: "company-addresses",
+                  to: "/companyAddresses",
+                },
+                {
+                  label: "Phones",
+                  icon: <Phones />,
+                  menuKey: "company-phones",
+                  to: "/companyPhones",
+                },
+              ]}
+              setActiveKey={setActiveKey}
+            /> */
