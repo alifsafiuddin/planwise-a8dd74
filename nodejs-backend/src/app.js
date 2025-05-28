@@ -23,6 +23,7 @@ const redisCache = require("feathers-redis-cache");
 const redisClient = require("./services/redis/config");
 
 const app = express(feathers());
+//Capucino
 // Load app socketio
 app.configure(
   socketio((io) => {
